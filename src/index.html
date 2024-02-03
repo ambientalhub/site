@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="description" content="Plataforma voltada à Integração de Serviços para Gestão Ambiental." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <!-- Browser -->
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="google" content="notranslate" />
+    <meta name="theme-color" content="#52575c" />
+
+    <!-- Default Shortcut Icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16" />
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" sizes="16x16" />
+
+    <!-- Open Graph protocol -->
+    <meta property="og:url" content="https://www.ambientalhub.com.br/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ambiental Hub" />
+    <meta property="og:description" content="Plataforma de Gestão Ambiental." />
+    <meta property="og:image" content="https://www.ambientalhub.com.br/assets/images/slide.png" />
+
+    <title>Ambiental Hub</title>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --mdc-theme-primary: #006C52;
+            --mdc-theme-background: #52575c;
+            --md-sys-color-primary: #006C52;
+            --md-sys-color-primary-container: #83F8CE;
+            --md-sys-color-secondary: #4C6359;
+            --md-sys-color-secondary-container: #CEE9DB;
+            --md-sys-color-tertiary: #3F6375;
+            --md-sys-color-tertiary-container: #C2E8FD;
+            --md-sys-color-error: #BA1A1A;
+            --md-sys-color-error-container: #FFDAD6;
+            --md-sys-color-background: #FBFDF9;
+            --md-sys-color-surface: #FBFDF9;
+            --md-sys-color-outline: #707974;
+            --md-sys-color-outline-variant: #BFC9C3;
+            --md-filled-button-label-text-font: system-ui;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            background: var(--mdc-theme-background);
+        }
+
+        #logo {
+            text-align: right;
+            margin: 20px;
+        }
+
+        #logo img {
+            width: auto;
+            height: 50px;
+        }
+
+        #banner {
+            background-color: var(--mdc-theme-primary);
+            background-image: url("./images/banner.jpg");
+            background-position: center center;
+            background-size: cover;
+            height: 30em;
+            position: relative;
+        }
+
+        #banner header {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #212121;
+            background: rgba(27, 27, 27, 0.75);
+            color: #fff;
+            padding-bottom: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        #wrapper {
+            background: #fff;
+            padding: 2em;
+        }
+
+        #wrapper md-list {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+
+        #wrapper md-list md-list-item {
+            text-align: center;
+        }
+
+        #wrapper md-list md-list-item md-icon {
+            color: var(--mdc-theme-primary);
+            --md-icon-size: 96px;
+        }
+
+        #messenger {
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 60px;
+            background-color: var(--md-sys-color-secondary-container);
+        }
+
+        #messenger * {
+            color: var(--md-sys-color-outline);
+        }
+
+        #messenger p a:hover i {
+            color: var(--mdc-theme-primary);
+        }
+
+        #messenger p a i {
+            padding: 3px;
+            font-size: 32px;
+        }
+
+        footer {
+            color: #fff;
+            text-align: center;
+            height: 20em;
+            padding-top: 20px;
+            font-size: 12px;
+        }
+
+        footer p a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        footer p a:hover {
+            color: var(--md-sys-color-secondary-container);
+        }
+    </style>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWZ1VGKY59"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-QWZ1VGKY59');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <header id="logo">
+        <img src="./images/logo.png" alt="Ambiental Hub" />
+    </header>
+
+    <main>
+        <!-- Banner -->
+        <section id="banner">
+            <header>
+                <h3>Gerencie demandas e descubra colaboradores ambientais</h3>
+                <md-filled-button href="https://app.ambientalhub.com.br/">Iniciar aplicativo</md-filled-button>
+            </header>
+        </section>
+
+        <!-- Wrapper -->
+        <section id="wrapper">
+            <md-list>
+                <md-list-item>
+                    <md-icon>eco</md-icon>
+                    <h2>Plataforma ambiental</h2>
+                    <p>Facilitamos uma transição sustentável ao conectar de forma eficiente e inovadora empresas e
+                        consumidores a fornecedores comprometidos com a oferta de produtos e serviços ambientalmente
+                        responsáveis.</p>
+                </md-list-item>
+                <md-list-item>
+                    <md-icon>task_alt</md-icon>
+                    <h2>Gestão de demandas</h2>
+                    <p>Auxiliamos a gestão de demandas ambientais por meio da organização de processos básicos, acordos
+                        de nível de serviços, licenças, autos de infração, certificados, fotos, documentos,
+                        cronograma de prazos, relatórios de desempenho e indicações.</p>
+                </md-list-item>
+                <md-list-item>
+                    <md-icon>inventory</md-icon>
+                    <h2>Gestão de portfólio</h2>
+                    <p>Oferecemos aos fornecedores de serviços e produtos ambientais o cadastro de portfólio, áreas
+                        de abrangência, cursos, certificações e licenças de forma a indicar a qualidade do serviço
+                        ofertado, com histórico e avaliações das entregas.</p>
+                </md-list-item>
+                <md-list-item>
+                    <md-icon>important_devices</md-icon>
+                    <h2>Diferencial tecnológico</h2>
+                    <p>Adotamos tecnologias em nuvem de larga escala para empresas de diferentes setores, facilmente
+                        integrada às operações existentes e alinhada com as metas futuras de sustentabilidade e
+                        regulações ambientais.</p>
+                </md-list-item>
+                <md-list-item>
+                    <md-icon>work_update</md-icon>
+                    <h2>Melhorias futuras</h2>
+                    <p>Desenvolveremos em breve funcionalidades de alertas, notificações, recorrências,
+                        agendamentos, avisos, painéis inteligentes, análises estatísticas, uso de gráficos,
+                        além de cursos sobre gestão ambiental.</p>
+                </md-list-item>
+            </md-list>
+        </section>
+
+        <!-- Messenger -->
+        <section id="messenger">
+            <h1>@ambientalhub</h1>
+            <p>
+                <a href="https://www.facebook.com/ambientalhub"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ambiental.hub"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.x.com/ambientalhub"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/ambientalhub/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@ambientalhub"><i class="fa-brands fa-square-youtube"></i></a>
+                <a href="https://www.tiktok.com/@ambientalhub"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://github.com/ambientalhub"><i class="fa-brands fa-github"></i></a>
+            </p>
+            <md-filled-button href="mailto:social@ambientalhub.com.br">Entre em contato</md-filled-button>
+        </section>
+    </main>
+    <footer>
+        <p><a href="about.html">Sobre a empresa</a></p>
+        <p><a href="privacy.html">Política de privacidade</a></p>
+        <p><a href="terms.html">Termos de uso</a></p>
+        <p>Vitória-ES, Brasil</p>
+        <p>CNPJ 51.496.708/0001-16</p>
+    </footer>
+
+    <!-- Script -->
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>

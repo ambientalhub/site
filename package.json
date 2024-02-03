@@ -1,0 +1,25 @@
+{
+  "name": "@ambientalhub/site",
+  "version": "0.0.1",
+  "description": "Ambiental Hub site and documentations",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "npm run assets && parcel",
+    "build": "npm run assets && rm -rf .parcel-cache && parcel build",
+    "assets": "mkdir -p dist/assets/ && cp -a src/assets/. dist/assets/"
+  },
+  "keywords": [
+    "ambiental hub",
+    "site"
+  ],
+  "author": {
+    "name": "Ambiental Hub",
+    "email": "dev@ambientalhub.com.br"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@material/theme": "^14.0.0",
+    "@material/web": "^1.1.1",
+    "parcel": "latest"
+  }
+}
