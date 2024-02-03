@@ -1,15 +1,28 @@
-# 🚀 Welcome to your new awesome project!
+# Ambiental Hub site and documentations
 
-This project has been created using **webpack-cli**, you can now run
+![node-current](https://img.shields.io/node/v/parcel)
 
+This site is a landing page for Ambiental Hub.
+
+## Requirements
+This site is developed by [Material Web](https://m3.material.io/develop/web). To install run:
+
+```bash
+npm i
 ```
-npm run build
+
+## Tests
+
+To tests run:
+
+```bash
+npm start
 ```
 
-or
+## Build
 
-```
-yarn build
-```
+To build run:
 
-to bundle your application
+```bash
+npm build
+```
