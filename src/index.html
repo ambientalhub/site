@@ -38,8 +38,6 @@
 
     <style>
         :root {
-            --mdc-theme-primary: #006C52;
-            --mdc-theme-background: #52575c;
             --md-sys-color-primary: #006C52;
             --md-sys-color-primary-container: #83F8CE;
             --md-sys-color-secondary: #4C6359;
@@ -48,18 +46,27 @@
             --md-sys-color-tertiary-container: #C2E8FD;
             --md-sys-color-error: #BA1A1A;
             --md-sys-color-error-container: #FFDAD6;
-            --md-sys-color-background: #FBFDF9;
+            --md-sys-color-background: #52575c;
             --md-sys-color-surface: #FBFDF9;
             --md-sys-color-outline: #707974;
             --md-sys-color-outline-variant: #BFC9C3;
             --md-filled-button-label-text-font: system-ui;
         }
 
+        md-filled-button.tertiary {
+            --md-filled-button-container-color: var(--md-sys-color-tertiary);
+        }
+
         body {
             margin: 0;
             padding: 0;
             border: 0;
-            background: var(--mdc-theme-background);
+            background: var(--md-sys-color-background);
+        }
+
+        em {
+            font-weight: bold;
+            color: var(--md-sys-color-primary);
         }
 
         #logo {
@@ -73,7 +80,7 @@
         }
 
         #banner {
-            background-color: var(--mdc-theme-primary);
+            background-color: var(--md-sys-color-primary);
             background-image: url("./images/banner.jpg");
             background-position: center center;
             background-size: cover;
@@ -110,7 +117,7 @@
         }
 
         #wrapper md-list md-list-item md-icon {
-            color: var(--mdc-theme-primary);
+            color: var(--md-sys-color-primary);
             --md-icon-size: 96px;
         }
 
@@ -126,7 +133,7 @@
         }
 
         #messenger p a:hover i {
-            color: var(--mdc-theme-primary);
+            color: var(--md-sys-color-primary);
         }
 
         #messenger p a i {
@@ -175,7 +182,12 @@
         <section id="banner">
             <header>
                 <h3>Gerencie demandas e descubra colaboradores ambientais</h3>
-                <md-filled-button href="https://app.ambientalhub.com.br/">Iniciar aplicativo</md-filled-button>
+                <p>
+                    <md-filled-button href="https://app.ambientalhub.com.br/">Iniciar aplicativo</md-filled-button>
+                    <md-filled-button class="tertiary" href="https://forms.gle/5Yn6as5Fw8wdVdHk6">
+                        Cadastrar empresa
+                    </md-filled-button>
+                </p>
             </header>
         </section>
 
@@ -192,16 +204,16 @@
                 <md-list-item>
                     <md-icon>task_alt</md-icon>
                     <h2>Gestão de demandas</h2>
-                    <p>Auxiliamos a gestão de demandas ambientais por meio da organização de processos básicos, acordos
-                        de nível de serviços, licenças, autos de infração, certificados, fotos, documentos,
-                        cronograma de prazos, relatórios de desempenho e indicações.</p>
+                    <p><em>(Em breve)</em> Apoiaremos a gestão de demandas ambientais por meio da organização de
+                        processos básicos, acordos de nível de serviços, licenças, autos de infração, certificados,
+                        fotos, documentos, cronograma de prazos, relatórios de desempenho e indicações.</p>
                 </md-list-item>
                 <md-list-item>
                     <md-icon>inventory</md-icon>
                     <h2>Gestão de portfólio</h2>
-                    <p>Oferecemos aos fornecedores de serviços e produtos ambientais o cadastro de portfólio, áreas
-                        de abrangência, cursos, certificações e licenças de forma a indicar a qualidade do serviço
-                        ofertado, com histórico e avaliações das entregas.</p>
+                    <p><em>(Em breve)</em> Ofereceremos aos fornecedores de serviços e produtos ambientais o cadastro de
+                        portfólio, áreas de abrangência, cursos, certificações e licenças de forma a indicar a qualidade
+                        do serviço ofertado, com histórico e avaliações das entregas.</p>
                 </md-list-item>
                 <md-list-item>
                     <md-icon>important_devices</md-icon>
@@ -213,7 +225,7 @@
                 <md-list-item>
                     <md-icon>work_update</md-icon>
                     <h2>Melhorias futuras</h2>
-                    <p>Desenvolveremos em breve funcionalidades de alertas, notificações, recorrências,
+                    <p>Desenvolveremos a frente funcionalidades de alertas, notificações, recorrências,
                         agendamentos, avisos, painéis inteligentes, análises estatísticas, uso de gráficos,
                         além de cursos sobre gestão ambiental.</p>
                 </md-list-item>
